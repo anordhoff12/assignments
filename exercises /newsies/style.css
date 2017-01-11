@@ -1,0 +1,36 @@
+h1 {
+    font-family: "Blamore", monospace; 
+    text-align: center;
+    display: block;
+    font-size: 5em;
+}
+
+h2 {
+    font-family: helvetica;
+    text-align: center;
+    background-color:ghostwhite;
+    background-color opacity: 50%;
+    position: absolute; 
+    top: 550px; 
+    left: 40; 
+    width: 50%; 
+}
+
+h4 {
+    font-family: helvetica;
+    color: gray;
+    text-align: center
+}
+
+p {
+    display: inline-block;
+    width: 30%;
+}
+.image { 
+   position: relative; 
+   width: 100%;
+}
+
+h2 { 
+   
+}
