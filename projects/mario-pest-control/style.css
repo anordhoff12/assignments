@@ -1,0 +1,70 @@
+div {
+    width: 23%;
+    height: 50px;
+}
+
+.goomba {
+    width: 17%;
+    height: 30px;
+}
+
+.cheep {
+    width: 55%;
+    height: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6em;
+    color: aliceblue;
+}
+
+@font-face {
+    font-family: 'Super Mario Bros.';
+    font-style: normal;
+    font-weight: normal;
+    src: url('SuperMario256.ttf');
+}
+
+body {
+    background-color: red;
+    background-image: url("http://cdn.wallpapersafari.com/38/4/nVkLgs.jpg");
+    background-size: 1500px 800px;
+}
+
+main {
+    background-color: forestgreen;
+    height: 380px;
+    width: 800px;
+    padding: 30px;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Super Mario Bros.';
+    line-height: .75;
+}
+
+table {
+    background-color: white;
+}
+
+.btn {
+    margin-right: 10px;
+}
+
+.input-sm {
+    width: 50px;
+}
+.pest {
+    font-family: 'Super Mario Bros.';
+}
+
+.table-head {
+    font-family: 'Super Mario Bros.';
+    text-align: left;
+    font-size: 20px;
+}

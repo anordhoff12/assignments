@@ -1,0 +1,25 @@
+header {
+    font-family: Garamond;
+    text-align: center;
+    font-size: 120px;
+}
+
+footer {
+    font-family: Garamond, serif;
+    text-align: right;
+    line-height: .25
+}
+main {
+    text-align: right;
+    font-family: sans-serif;
+}
+nav {
+    font-family: Garamond;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 1;
+    padding-top: 30px;
+}

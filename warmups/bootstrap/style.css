@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+    font-size: 6em;
+}
+
+.btn-danger {
+    color: black;
+}
+.btn-info {
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.btn-warning {
+    background-color:yellow;
+    color: firebrick;
+}
+li {
+    color: white;
+}
