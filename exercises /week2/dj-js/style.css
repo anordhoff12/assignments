@@ -1,0 +1,21 @@
+div {
+    background-color: black;
+    width: 50%;
+    height: 1000px;
+}
+
+.box {
+    width: 50%;
+    height: 1000px;
+    background-color: black;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+}
+
+.box:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color: cyan;
+}

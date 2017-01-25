@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Business Time</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="index.html">Home</a> </div>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="about.html">About</a> </div>
+        </div>
+    </nav>
+    <h1 class="about">Contact</h1>
+    <div class="row">
+        <div class="col-md-4"><img class="about-img" src="frcsahtssfu-michael-browning.jpg"></div>
+        <div class="col-md-4">
+            <form id="contactForm">
+                <p>We look forward to working with you to find your dream home. Please tell us a little about yourself and what property you're interested in, and one of our agents will be in touch within 24 hours.</p>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="firstName"> </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="lastName"> </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" id="email"> </div>
+                <p>Are you interested in buying or selling a home?</p>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="buyerSeller" id="buyerSeller" value="buyer"> Buying </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="buyerSeller" id="buyerSeller" value="seller"> Selling </label>
+                </div>
+                <select class="form-control" id="listing">
+                    <option>Select a listing you're interested in</option>
+                    <option>4 Privet Drive</option>
+                    <option>1020 Palm Drive</option>
+                    <option>221B Baker Street</option>
+                </select>
+            </form>
+            <button class="btn btn-default" id="submitForm" type="submit">Submit</button>
+            <p>Thank you for contacting North Farm Real Estate.</p>
+        </div>
+        <div class="col-md-4"><p class="contact">Contact us today:</p>
+        <p class="north-farm">North Farm Real Estate</p>
+        <p class="phone">Phone: 801-555-5555</p>
+        <p class="north-email">Email: NorthFarm@Realty.com</p>
+        <br>
+        <p class="address">555 North Main Street</p>
+        <p class="address">Salt Lake City, Utah</p>
+        </div>
+    
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

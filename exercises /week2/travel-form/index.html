@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <h1>Cottonwood Airlines</h1> <img class="top" src="rf6ywhvkrly-ross-parmly.jpg"> <img class="top" src="emnbj5fbtaa-suhyeon-choi.jpg"> <img class="top" src="4-kffh2eiu-deniz-altindas.jpg">
+    <h2>We carry you to your dreams.</h2>
+    <p>Please enter the following information to book your flight.</p>
+    <form id="airlineForm">
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="firstName"> </div>
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="lastName"> </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" id="age"> </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="gender" id="female" value="Female"> Female </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="gender" id="male" value="Male"> Male </label>
+        </div>
+        <select class="form-control" id="destination">
+            <option>Choose your destination</option>
+            <option>Hawaiin Islands</option>
+            <option>New York City</option>
+            <option>Nashville, TN</option>
+        </select>
+        <p>Please check any special dietary needs you may require.</p>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="dietaryRestrictions" id="vegan-option" value="vegan">Vegan meal </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="dietaryRestrictions" id="kosher" value="kosher">Kosher meal </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" name="dietaryRestrictions" id="vegan-option" value="gluten free">Gluten free meal </label>
+    </form>
+    <button class="btn btn-default" id="submitForm" type="submit">Submit</button>
+    <p>Thank you for flying with Cottonwood Airlines.</p>
+    <script src="main.js"></script>
+</body>
+
+</html>

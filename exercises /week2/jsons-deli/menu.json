@@ -1,0 +1,63 @@
+{
+    "appetizers": [
+        {
+            "name": "Python fingers",
+            "ingredients": [
+                {
+                    "sides": "French fries, Sweet potatoe fries, Chips",
+                    "sauces": "Ranch, Barbeque, Fry sauce",
+                }
+            ],
+            "description": "Delicious, long strips of chicken, battered in our homestyle recipe and fried to crispy perfection."
+        }
+],
+    "coldSandwiches": [
+        {
+            "name": "The CSS Sandwich",
+            "ingredients": [
+                {
+                    "breads": "Wheat, white, whole grain",
+                    "veggies": "Tomatoes, lettuce, olives, bellpeppers, onions"
+                }
+            ],
+            "description": "Choose your bread and veggies on this tasty Blackforest ham cold sandwich that is topped with jalepeno peppers, pepper jack cheese, and our own spicy sauce."
+        }
+],
+        "hotSandwiches": [
+        {
+            "name": "The HTM MeLt",
+            "ingredients": [
+                {
+                    "breads": "Italian, wheat, 10 grain",
+                    "veggies": "Tomatoes, lettece, bellpeppers, spinache",
+                }
+            ],
+            "description": "The cheddar in this melt brings out the rich mesquite flavor in the turkey, which is topped with our own ranch-style sauce."
+        }
+],
+        "desserts": [
+        {
+            "name": "DOM Sundae",
+            "ingredients": [
+                {
+                    "toppings": "Nuts, whipcream, cherry, caramel, banana slices",
+                    "flavors": "Vanilla, chocolate, strawberry",
+                }
+            ],
+            "description": "This delicious sundae brings all your favorite elements together."
+        }
+],
+        "drinks": [
+        {
+            "name": "Bootstrap in a bottle",
+            "ingredients": [
+                {
+                    "flavors": "Rootbeer, Lemon-lime, Ginger",
+                    "fruitSqueeze": "Lime, lemon, cherry",
+                }
+            ],
+            "description": "These brewed-on-site sodas will blow your mind! Choose a fruit to squeeze a little extra zing into your drink."
+        }
+],
+
+}
