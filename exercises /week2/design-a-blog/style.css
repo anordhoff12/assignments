@@ -7,21 +7,48 @@
 }
 
 .wrapper {
-    height: 2000px;
-    background-image: url(http://cdn.wallpapersafari.com/41/52/9mJa1k.jpeg);
+    height: 2500px;
+    background-color: lightgray;
     margin-top: 50px;
     margin-left: 150px;
     width: 75%;
 }
 
 body {
-    background-color: darkslategrey;
+    background-image: url(gplaypattern/gplaypattern.png);
 }
 
 h2 {
     font-family: sans-serif;
     color: white;
+    text-align: center;
 }
 p {
     font-family: garamond;
+    text-align: center;
+    line-height: 1;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+img {
+    width: 55%;
+    border: solid 1px;
+}
+
+.date-posted {
+    color: dimgrey;
+    text-align: right;
+    margin-right: 20px;
+    font-family: helvetica;
+}
+
+.box {
+    font-family: garamond;
+    background-color: lightslategray;
+    width: 15%;
+    height: 45px;
 }

@@ -23,15 +23,16 @@ function isEven(number) {
 }
 console.log(isEven(6));
 
-// If the length of the string is less than or equal to twenty characters long, return the string concatenated with itself (string + string).
+
 var createdString = "Happy birthday to you!";
 
 function string(createdString) {
-    if (string.length <= 20);
-        return string + string;
+    if (createdString.length <= 20) {
+        return createdString + createdString;
    } else {
-        return string % 2;
+        return createdString.substr(0, createdString.length / 2);
     }
-console.log(string);
+}
+console.log("; " + string(createdString));
 
 
