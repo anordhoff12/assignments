@@ -1,30 +1,30 @@
 var readline = require("readline-sync");
 playerName = readline.question("You're one of the few who survived the zombie outbreak. But you won't be alive much longer if you can't hold your own against the zombie herds that are growing every day. If you're tough enough, or lucky enough, you may survive and make it to the sanctuary. If not, you're zombie dinner. What's your name survivor? ");
 var PlayerStats = {
-    playerName: playerName, 
-    hitPoints: 25, 
-    items: ["Shotgun"]
+    playerName: playerName,
+    hitPoints: 25,
+    items: ["shotgun"]
 }
 
 function isAlive() {
     return hitPoints > 0;
 }
 
-function stats(playerName, hitPoints, items) {
-    console.log("Your Stats are: " + "Hunter name: " + playerName + ", " + "Hit Points: " + hitPoints + ", " + "items: " + items);
+function stats(items) {
+    console.log("Your items are: " + items);
 }
-var myStats = readline.question("If you want to know your stats at any point, just enter 'stats' and I'll tell you how things are looking for you, " + playerName + ". Otherwise, if you're ready to get moving, press 1 to start walking. ");
-if (myStats === "stats") {
-    stats(PlayerStats.playerName, PlayerStats.hitPoints, PlayerStats.items);
-}
+
 var isPlaying = true;
 var options = ["walk", "run", "fight"]
-//var enemies = ["nuclear zombie", "crazy person, alone too long", "freshly turned zombie"];
 while (isPlaying) {
+    var myItems = readline.question("If you want to see your inventory at any point, just enter 'items' and I'll tell you how things are looking for you, " + playerName + ". Otherwise, if you're ready to get moving, press 1 to continue walking. ");
+if (myItems === "items") {
+    stats(PlayerStats.items);
+}
     var index = readline.keyInSelect(options, "Start walking, " + playerName + "!");
     if (options[index] === "walk") {
         walk();
-    } else if (options[2] === "run") {
+    } else if (options[1] === "run") {
         run();
     } else {
         fight();
@@ -34,12 +34,12 @@ while (isPlaying) {
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-var arrayToAvg = []
-for (var i = 0; i < 100; i++) {
-    arrayToAvg.push(getRandomNumber(5, 7));
-}
-getRandonNumber(1, 4);
-getRandonNumber(5, 7);
+//var arrayToAvg = []
+//for (var i = 0; i < 100; i++) {
+//    arrayToAvg.push(getRandomNumber(5, 7));
+//}
+//getRandonNumber(1, 4);
+//getRandonNumber(5, 7);
 
 
 var newEnemy = "";
@@ -49,7 +49,7 @@ function enemyName() {
     return attacker[Math.floor(Math.random() * attacker.length)];
 }
 
-function enemyHitPoints() {
+function enemyHitPoints(enemyName) {
     if (enemyName === "nuclear zombie") {
         return 45;
     } else if (enemyName === "freshly turned zombie") {
@@ -62,6 +62,7 @@ function enemyHitPoints() {
 function enemyPower() {
     return Math.floor((Math.random() * 30) + 30);
 }
+
 function Enemy(enemyName, enemyHitPoints, enemyPower) {
     this.enemyName = enemyName();
     this.enemyHitPoints = enemyHitPoints(this.enemyName);
@@ -71,12 +72,22 @@ function Enemy(enemyName, enemyHitPoints, enemyPower) {
 function fightScene() {
     var gainHp = getRandomNumber(0, 10);
     var loseHp = getRandomNumber(0, 20);
-    
+
     if (gainHp <= 0) {
+        isPlaying = false;
         console.log("Your brains are now zombie dinner!");
     } else {
-        console.log("You live to fight another day!")
+        console.log("You live to fight another day!");
+        getItem();
     }
+}
+
+function getItem() {
+        var possibleItems = ["javeline", "bat", "knife", "broken coke bottle"];
+        var item = possibleItems[Math.floor(Math.random() * possibleItems.length)];
+        PlayerStats.items.push(item);
+         console.log("You just picked up a " + item);
+   
 }
 
 function gotAttacked() {
@@ -84,29 +95,33 @@ function gotAttacked() {
         var randomNumber = Math.floor((Math.random() * 3) + 1);
         newEnemy = new Enemy(enemyName, enemyHitPoints, enemyPower);
         if (randomNumber === 1) {
-            console.log("You let your guard down! A " + newEnemy.enemyName + " came around the corner! It's coming for you! Do you want to attack it or run,  " + playerName + "?");
-            fightScene();
+            var fightBack = readline.keyInSelect(["run", "fight"], "You let your guard down! A " + newEnemy.enemyName + " came around the corner! It's coming for you! Do you want to attack it or run,  " + playerName + "?");
+            console.log(fightBack);
+            //                            console.log("You let your guard down! A " + newEnemy.enemyName + " came around the corner! It's coming for you! Do you want to attack it or run,  " + playerName + "?");
+            if (fightBack === 1) {
+                fightScene();
+            } else {
+                run();
+            }
+            //                        fightScene();
         } else {
-            console.log("You got attacked by a " + newEnemy.enemyName + "! That was close, it almost bit your leg off! You better press '2' and walk away!");
+            console.log("You got attacked by a " + newEnemy.enemyName + "! That was close, it almost bit your leg off! You better get moving!");
         };
     }
 }
 
-
 function walk() {
     if (getRandomNumber(1, 4) === 1) {
         gotAttacked();
-    }
-    else {
-        console.log("You can keep walking by entering '1', but keep your wits about you!");
+    } else {
+        console.log("You can keep walking, but keep your wits about you!");
     }
 }
 
 function run() {
     if (getRandomNumber(1, 4) === 2) {
         gotAttacked();
-    }
-    else {
+    } else {
         console.log("Run, run!");
     }
 }
@@ -114,8 +129,7 @@ function run() {
 function fight() {
     if (getRandomNumber(1, 4) === 3) {
         gotAttacked();
-    }
-    else {
+    } else {
         console.log("Fight for your life!");
     }
 }
@@ -135,12 +149,12 @@ function fight() {
 //    isPlaying = false;
 //}
 //
-function coastClear() {
-    isWalking = true;
-    while (isWalking) {
-        doesEnemyAppear();
-    }
-}
+//function coastClear() {
+//    isWalking = true;
+//    while (isWalking) {
+//        doesEnemyAppear();
+//    }
+//}
 //var newEnemy = "";
 //
 //function enemyName() {
