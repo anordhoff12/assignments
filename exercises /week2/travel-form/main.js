@@ -7,6 +7,7 @@ submitBooking.addEventListener("click", function () {
     var age = form.elements.age.value;
     var gender = form.elements.gender.value;
     var destination = form.elements.destination.value;
+    
     var checkedBoxes = document.querySelectorAll('input[name=dietaryRestrictions]:checked');
     console.log(checkedBoxes);
     var dietArray = [];

@@ -1,0 +1,39 @@
+body {
+    font-family: 'VT323', monospace;
+    background-image: url(tk2_rbzq7ra-rohit-choudhari.jpg);
+    background-size: cover;
+    color:lightgray;
+}
+
+
+h1 {
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 8em;
+    color: lightgrey;
+}
+
+form {
+    color:lightgray;
+}
+
+.col-sm-12 {
+    padding-top: 6px;
+    margin-left: 5px;
+}
+
+table {
+    font-family: 'VT323', monospace;
+    font-size: 2em;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid white;
+    width: 50%;
+    background-color: darkgray;
+}
+
+.tableHead {
+    text-decoration: underline;
+    background-color: azure;
+    
+}

@@ -1,0 +1,94 @@
+.nav {
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.navbar {
+    background-color: white;
+    border-bottom: none;
+    list-style-type: none;
+    display: table-cell;
+    width: 30%;
+    float: none;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.nav {
+    padding-left: 10px;
+    display: inline;
+}
+
+.navbar .navbar-nav { 
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+    
+}
+.form-control {
+    font-style: italic;
+    width: 130px;
+    border-radius: 0;
+    
+}
+
+.inner-addon { 
+    position: relative; 
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+.right-addon .glyphicon { 
+    right: 0px;
+    justify-content: right;
+}
+
+.glyphicon {
+    color: darkgray;
+} 
+
+li {
+    padding-left:30px;
+    padding-right:30px;
+    color: black;
+}
+
+.beneath-nav {
+    height: 70px;
+}
+
+.email-bar {
+    height: 70px;
+    background: radial-gradient(ellipse at center, rgba(252, 202, 178, 0.56) 0%,rgba(255, 177, 140, 0.2) 100%);
+}
+
+.carousel-inner {
+    height: 515px;
+}
+
+.form-control-email {
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-style: none;
+    text-transform: uppercase;
+    margin-top: 5px;
+    width: 100%;
+    color: black;
+}
+.fa {
+    margin-top: 5px;
+    margin-right: 10px;
+}

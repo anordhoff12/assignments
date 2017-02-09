@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular ng-model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="MainController">
+
+    <div class="row">
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+            <h1>Chores</h1>
+            <h3 class="well">Living Room</h3>
+            <h5>{{ chores.livingRoom }}</h5>
+            <input type="text" placeholder="chore" ng-model="chores.livingRoom">
+
+            <h3 class="well">Kitchen</h3>
+            <h5>{{ chores.kitchen }}</h5>
+            <input type="text" placeholder="chore" ng-model="chores.kitchen">
+
+            <h3 class="well">Bedroom</h3>
+            <h5>{{ chores.bedroom }}</h5>
+            <input type="text" placeholder="chore" ng-model="chores.bedroom">
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

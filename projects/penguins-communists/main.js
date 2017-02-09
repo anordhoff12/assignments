@@ -19,41 +19,48 @@ function Team(name, population) {
         console.log("Hit!");
         onHit(party);
     } else {
-        console.log("Missed!");
+        console.log("The nuke missed and hit an iceberg!");
     }
  }
  
  function coinFlip(){
-    if (generatRandomNumber(0,1)) {
+    if (generatRandomNumber(0, 1) === 0) {
         isPenguinsTurn = true;
-        sendNuke(penguins, onHit, onMiss);
+        console.log("Penguins send nukes");
+        sendNukes(penguins, onHit, onMiss);
     } else {
         isPenguinsTurn = false;
-        sendNuke(communists, onHit, onMiss);
+        console.log("Communists send nukes")
+        sendNukes(communists, onHit, onMiss);
     }
  }
  
- function generatRandomNumber(min,max) {
-    return Math.floor(Math.random() * (max-min+1)  +min);
+ function generatRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)  + min);
  }
  
  function onHit(whoGotNuked) {
-    whoGotNuked.population = 0;
-    console.log(whoGotNuked.name + " got nuked!");
+    isPenguinsTurn = !isPenguinsTurn;
+    whoGotNuked.population = whoGotNuked.population - generatRandomNumber(10000, 300000);
+    console.log(whoGotNuked.name + " got nuked! And only has a remaining population of: " + whoGotNuked.population);
  }
  
- function onMiss(){
+ function onMiss(party){
     isPenguinsTurn = !isPenguinsTurn;
     console.log(party.name + " were missed!")
  }
  
- while(penguins.isAlive() && communists.isAlive()){
+ 
+coinFlip()
+while(penguins.isAlive() && communists.isAlive()){
     if(isPenguinsTurn){
         sendNukes(communists, onHit, onMiss);
     } else {
         sendNukes(penguins, onHit, onMiss);
     }
  }
+
+
  
- console.log("The end of the war!");
+ console.log("That final nuke finished them off!");
  

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="promisesApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-controller="MainController">
+   <input type="text" ng-model="pokemonName">
+   <button type="submit" ng-click="addPokemon(pokemonName)">Add Pokemon</button>
+   <button type="submit" ng-click="removePokemon(pokemonName)">Remove Pokemon</button>
+    
+    <div>
+        <ul>
+            <li ng-repeat="pokemon in favPokemon">
+                {{ pokemon }}
+            </li>
+        </ul>    
+            
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="httpservice.js"></script>
+</body>
+</html>

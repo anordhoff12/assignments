@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="YodaApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoda Speaks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-controller="myController" style="margin-left:15%; margin-right:15%; background-color:yellow:">
+   <input type="text" ng-model="phrase">
+   <button ng-click="submitPhrase(phrase)">Yodify</button>
+   
+   <h2>{{ yodaPhrase }}</h2>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>

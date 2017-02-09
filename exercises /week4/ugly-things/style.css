@@ -1,0 +1,44 @@
+h1 {
+    color: white;
+    text-align: center;
+    height: 100px;
+    margin-top: 0;
+    font-family: 'Barrio', cursive;
+    font-size: 6em;
+    padding-top: 10px;
+}
+
+.header-block {
+    display: block;
+    background-color: powderblue;
+}
+
+.form-control {
+    font-family: 'Barrio', cursive;
+    font-size: 1.25em;
+}
+
+.btn {
+    font-family: 'Barrio', cursive;
+    color: powderblue;
+}
+
+.img-responsive {
+    width: 35%;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3em;
+    
+}
+
+.container {
+    background-color: coral;
+    width: 100%;
+    height: 25%;
+}

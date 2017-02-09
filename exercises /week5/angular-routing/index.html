@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Favorite State</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Barrio|Indie+Flower|Josefin+Sans|Julius+Sans+One|Open+Sans+Condensed:300|Pacifico|Poiret+One|Sacramento" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" class="navImg" src="cacd7bcb8bd4732a29e12e26008c6a85_cactus-svg-file-for-cutting-cactus-clipart-no-background_432-432.png">
+                </a>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="#/about">About</a></li>
+                    <li><a href="#/whyilove">Why I Love</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <div ng-view>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="home.js"></script>
+    <script src="about.js"></script>
+    <script src="whyilove.js"></script>
+
+</body>
+
+</html>
